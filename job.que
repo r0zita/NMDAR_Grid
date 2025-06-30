@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#SBATCH -J mcelljobs
+#SBATCH -N 1
+#SBATCH -p RM-shared
+#SBATCH -t 10:00:00
+
+for k in {1..51}; do ./mcell --seed  $((k)) Scene.main.mdl >> log.1 ; done
