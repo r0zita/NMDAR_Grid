@@ -1,0 +1,16 @@
+REACTION_DATA_OUTPUT {
+
+STEP = reaction_output_time_step
+/*
+BINARY_OUTPUT = TRUE
+BINARY_OUTPUT_COMPRESSION_LEVEL = 9
+BINARY_OUTPUT_COMPRESSION_TYPE = BZIP2
+BINARY_OUTPUT_DIRECTORY = binary_out
+BINARY_OUTPUT_FILENAME = "seed_count.00" & seed & ".bin.bz2"
+*/
+
+{COUNT[B_RO_n1,WORLD]}=> reactdir & "open_GluN2B_n1" & "." & seed & ".dat" 
+
+{COUNT[Glu,WORLD]}=> reactdir & "Glu" & "." & seed & ".dat"  
+
+}

@@ -1,0 +1,77 @@
+DEFINE_REACTIONS {
+/* ===  grid points === */ 
+/*munc_g1, -> munc_g1, + Glu, ["release2.txt"]:opentoglu*/ 
+
+
+/* ===  muncs === */ 
+munc_1, -> munc_1, + Glu, ["release2.txt"]:opentoglu
+munc_2, -> munc_2, + Glu, [0] 
+munc_3, -> munc_3, + Glu, [0] 
+munc_4, -> munc_4, + Glu, [0] 
+munc_5, -> munc_5, + Glu, [0] 
+munc_6, -> munc_6, + Glu, [0] 
+munc_7, -> munc_7, + Glu, [0] 
+munc_8, -> munc_8, + Glu, [0] 
+munc_9, -> munc_9, + Glu, [0] 
+munc_10, -> munc_10, + Glu, [0] 
+munc_11, -> munc_11, + Glu, [0] 
+munc_12, -> munc_12, + Glu, [0] 
+munc_13, -> munc_13, + Glu, [0] 
+
+/* ===  GluN2A --  clusters === */ 
+/* === GluN2A cluster # 1  */ 
+/* 
+GluN2A_g1, + Glu, -> A_R1_n1, [A_kon_2] 
+A_R1_n1, -> GluN2A_g1, + Glu, [A_koff] 
+
+A_R1_n1, + Glu, -> A_R2_n1, [A_kon] 
+A_R2_n1, -> A_R1_n1, + Glu, [A_koff_2] 
+
+A_R2_n1, -> A_RD1_n1, [A_kd1p] 
+A_RD1_n1, -> A_R2_n1, [A_kd1n] 
+
+A_R2_n1, -> A_RD2_n1, [A_kd2p] 
+A_RD2_n1, -> A_R2_n1, [A_kd2n] 
+
+A_R2_n1, -> A_RC1_n1, [A_kfp] 
+A_RC1_n1, -> A_R2_n1, [A_kfn] 
+
+A_R2_n1, -> A_RC2_n1, [A_ksp] 
+A_RC2_n1, -> A_R2_n1, [A_ksn] 
+
+A_RC1_n1, -> A_RO_n1, [A_ksp] 
+A_RO_n1, -> A_RC1_n1, [A_ksn] 
+
+A_RC2_n1, -> A_RO_n1, [A_kfp] 
+A_RO_n1, -> A_RC2_n1, [A_kfn] 
+ */ 
+
+/* === GluN2B --  clusters === */ 
+/* === GluN2B cluster # 1  */ 
+
+GluN2B_g1, + Glu, -> B_R1_n1, [B_kon_2] 
+B_R1_n1, -> GluN2B_g1, + Glu, [B_koff] 
+
+B_R1_n1, + Glu, -> B_R2_n1, [B_kon] 
+B_R2_n1, -> B_R1_n1, + Glu, [B_koff_2] 
+
+B_R2_n1, -> B_RD1_n1, [B_kd1p] 
+B_RD1_n1, -> B_R2_n1, [B_kd1n] 
+
+B_R2_n1, -> B_RD2_n1, [B_kd2p] 
+B_RD2_n1, -> B_R2_n1, [B_kd2n] 
+
+B_R2_n1, -> B_RC1_n1, [B_kfp] 
+B_RC1_n1, -> B_R2_n1, [B_kfn] 
+
+B_R2_n1, -> B_RC2_n1, [B_ksp] 
+B_RC2_n1, -> B_R2_n1, [B_ksn] 
+
+B_RC1_n1, -> B_RO_n1, [B_ksp] 
+B_RO_n1, -> B_RC1_n1, [B_ksn] 
+
+B_RC2_n1, -> B_RO_n1, [B_kfp] 
+B_RO_n1, -> B_RC2_n1, [B_kfn] 
+
+
+}
